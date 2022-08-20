@@ -1,9 +1,8 @@
 html{
     background-color: black;
-}
-body{
-    width: 70%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header{
     display: flex;
@@ -12,10 +11,17 @@ header{
 }
 body{
     width: 80%;
+  
 }
 .menubar{
     display: flex;
     justify-content: space-evenly;
+}
+.logo{
+  padding: 10px;
+}
+.menubar div{
+  padding: 10px;
 }
 .drop-zone {
     max-width: 200px;
