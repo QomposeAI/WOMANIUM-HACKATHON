@@ -2,11 +2,11 @@
 # Usage: pip install -r requirements.txt
 Click==7.0
 Flask==1.1.2
-Flask-SQAlchemy==2.4.4
+Flask-SQAlchemy
 guincorn==20.1.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-SQLAlchemy==1.3.17
+SQLAlchemy
 Werkzeug==0.16.0
 
