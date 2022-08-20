@@ -7,7 +7,9 @@ header{
     justify-content: space-between;
     padding: 30px;
 }
-
+body{
+    width: 80%;
+}
 #menubar{
     display: flex;
     justify-content: space-evenly;
