@@ -12,12 +12,15 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <header>
-        <div>Logo</div>
-        <div>Menu</div>
-     </header>
-     <!--This is where other pages add their data-->
-    {% block content %}{% endblock %}
+    <div class="container">
+        <header>
+            <div>Logo</div>
+            <div>Menu</div>
+         </header>
+         <!--This is where other pages add their data-->
+        {% block content %}{% endblock %}
+    </div>
+
 </body>
 <script src="../static/main.js"></script>
 </html>

@@ -1,8 +1,16 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    background-color: gainsboro;
+}
 header{
     display: flex;
     justify-content: space-between;
 }
-drop-zone {
+.drop-zone {
     max-width: 200px;
     height: 200px;
     padding: 25px;
