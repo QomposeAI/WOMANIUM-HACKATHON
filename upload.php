@@ -12,7 +12,7 @@
 
     $location = "upload/".$filename;
 
-    echo "It works";
+    echo "It works"
 
     ?>
 </body>
