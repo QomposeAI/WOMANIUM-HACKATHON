@@ -7,6 +7,7 @@
     <title>Homepage</title>
 </head>
 <body>
+    <h1>This is the homepage</h1>
 <input type="file" name="files[]" id="fileUpload">
     <script type="text/javascript">
             (function() {
