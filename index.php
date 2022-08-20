@@ -1,7 +1,16 @@
-<html>
-    <input type="file" name="files[]" id="fileUpload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+<input type="file" name="files[]" id="fileUpload">
     <script type="text/javascript">
             (function() {
+                console.log("its working")
                 // Key for local storage, use to save and access.
                 var FILE_KEY = 'save.json';
 
@@ -31,4 +40,5 @@
                 }
             })();
     </script>
+</body>
 </html>
