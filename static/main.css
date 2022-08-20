@@ -1,5 +1,6 @@
 html{
     background-color: black;
+    background-image: url(D)
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +12,7 @@ header{
 }
 body{
     width: 80%;
+    border-radius: 10px;
   
 }
 .menubar{
