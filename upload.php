@@ -12,11 +12,8 @@
 
     $location = "upload/".$filename;
 
-    if( move_uploaded_file($_FILES['file']['tmp_name'], $location))(
-        echo '<p>File Uploaded Successfully</p>';
-    )else(
-        echo '<p>error uploading file</p>';
-    )
+    echo "It works";
+
     ?>
 </body>
 </html>
