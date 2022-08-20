@@ -1,17 +1,18 @@
-body{
+html{
     background-color: black;
 }
-.container{
-    background-color: gainsboro;
-    margin: 10%;
-    height: 80%;
-}
+
 header{
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
-.menu_bar{
+#container{
+    background-color: gainsboro !important;
+    margin: 10%;
+    height: 80%;
+}
+#menu_bar{
     display: flex;
     justify-content: space-evenly;
 }
