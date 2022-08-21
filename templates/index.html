@@ -27,37 +27,37 @@
 {%endblock%}
 {% block title %}Home Page{% endblock%}
 {% block content %}
-
- <div class="d-flex justify-content-between p-4">
- <div>I have text written.</div>
-<!--    <form action="/upload_video" method="POST" enctype="multipart/form-data">
-        <div class="form-group">
-        <div class="drop-zone">
-            <span class="drop-zone_prompt">Drop file here or click to upload</span>
-        </div>
-        <input type="file" name="file" id="uploaded_video" class="drop-zone__input">
-        <input type="submit" value="submit">
         
-            <label>Select Video</label>
-            <div class="custom-file">
-                <input type="file" name="video" id="video" class="custom-file-input">
-                <label for="video" class="custom-file-label">Select Video</label>
+
+    <div class="d-flex justify-content-between p-4">
+        <div>I have text written.</div>
+        <!--    <form action="/upload_video" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+            <div class="drop-zone">
+                <span class="drop-zone_prompt">Drop file here or click to upload</span>
             </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Upload Video</button>
+            <input type="file" name="file" id="uploaded_video" class="drop-zone__input">
+            <input type="submit" value="submit">
+            
+                <label>Select Video</label>
+                <div class="custom-file">
+                    <input type="file" name="video" id="video" class="custom-file-input">
+                    <label for="video" class="custom-file-label">Select Video</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload Video</button>
 
 
-    </form>
-            -->
-    <form action="/" class="dropzone" id="my-dropzone" method="POST">
-        <div class="form-group">
-          <button type="submit">Submit</button>
+        </form>
+                -->
+        <form action="/" class="dropzone dz-clickable" id="my-dropzone" method="POST">
+            <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files here to upload</button></div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+                </div>
+        </form>
         </div>
-        <div class="form-group">
-          <label for="myFormData">Example Form Data</label>
-          <input type="text" name="myFormData" id="myFormData" placeholder="Enter your data" class="form-control" required/>
-        </div>
-      </form>
-</div>
+    </div>
+
 
 {% endblock%}

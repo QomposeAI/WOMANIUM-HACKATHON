@@ -14,16 +14,20 @@
 </head>
 <body>
     <div class="container-xl">
-        <header>
-            <div>Logo</div>
-            <div class="menubar">
-                <div> <a href="">About</a> </div>
-                <div> <a href="">Contact</a> </div>
-                <div> <a href="">another</a> </div>
-            </div>
-         </header>
-         <!--This is where other pages add their data-->
-        {% block content %}{% endblock %}
+        <div>
+            <header>
+                <div>Logo</div>
+                <div class="menubar">
+                    <div> <a href="">About</a> </div>
+                    <div> <a href="">Contact</a> </div>
+                    <div> <a href="">another</a> </div>
+                </div>
+             </header>
+        </div>
+        <div>
+            <!--This is where other pages add their data-->
+            {% block content %}{% endblock %}
+        </div>
     </div>
     <div class="qompose">
         Qompose.AI
