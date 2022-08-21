@@ -17,7 +17,7 @@ header{
 body{
     width: 70%;
     border-radius: 10px;
-    height: 60%;
+    min-height: 60%;
 }
 .menubar{
     display: flex;
@@ -98,3 +98,18 @@ body{
     margin-bottom: 15px;
     margin-top: 15px;
   }
+.index-text{
+  max-width: 40%;
+}
+.index-text h1{
+  font-size: 25px;
+  font-weight: 600;
+}
+.index-text h2{
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 50px;
+}
+.main-div {
+  margin: 50px;
+}
