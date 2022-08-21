@@ -13,6 +13,12 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
+
 headers = {
     'Key': 'FOgbsGOPiC0Pf2DcMsn9oZDG6301428b',
 }
