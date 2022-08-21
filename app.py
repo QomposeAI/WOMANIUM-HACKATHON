@@ -4,6 +4,7 @@ import os
 from flask import Flask, render_template, request, redirect, jsonify
 
 app = Flask(__name__)
+app.debug = True
 
 @app.route("/")
 def index():
@@ -19,9 +20,9 @@ def contact():
 
 
 
-headers = {
-    'Key': 'FOgbsGOPiC0Pf2DcMsn9oZDG6301428b',
-}
+#headers = {
+#    'Key': 'FOgbsGOPiC0Pf2DcMsn9oZDG6301428b',
+#}
 
 #@app.route("/upload_video", methods=["GET", "POST"])
 #def upload_video():
