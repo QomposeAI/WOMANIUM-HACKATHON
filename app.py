@@ -19,9 +19,9 @@ def contact():
 
 
 
-#headers = {
-#    'Key': 'FOgbsGOPiC0Pf2DcMsn9oZDG6301428b',
-#}
+headers = {
+    'Key': 'FOgbsGOPiC0Pf2DcMsn9oZDG6301428b',
+}
 
 #@app.route("/upload_video", methods=["GET", "POST"])
 #def upload_video():
@@ -35,4 +35,3 @@ def contact():
 #
 #            return redirect(request.url)
 #    return render_template("templates/index.html")
-
