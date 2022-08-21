@@ -1,9 +1,5 @@
 import os
 #import requests
-import logging
-
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
 
 from flask import Flask, render_template, request, redirect, jsonify
 
