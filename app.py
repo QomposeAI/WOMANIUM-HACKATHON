@@ -13,9 +13,9 @@ def index():
 def about():
     return render_template("about.html")
 
-@app.route("/about")
+@app.route("/contact")
 def about():
-    return render_template("about.html")
+    return render_template("contact.html")
 
 
 
@@ -35,3 +35,6 @@ headers = {
 #
 #            return redirect(request.url)
 #    return render_template("templates/index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
