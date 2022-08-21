@@ -45,6 +45,7 @@ body{
 
   border-radius: 4px;
   color: white;
+    font-family: 'Outfit', serif;
 }
 .menubar{
     display: flex;
@@ -60,17 +61,12 @@ body{
     max-width: 200px;
     height: 200px;
     padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
     cursor: pointer;
-    color: #cccccc;
-    border: 4px dashed #009578;
-    border-radius: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.63);
   }
   
   .drop-zone--over {
@@ -107,7 +103,7 @@ body{
     position: fixed;
     right: 0px;
     bottom: 0px;
-    width: 200px;
+    width: 130px;
     height:40px;
     /* background-color:lightblue; */
     padding: 5px;
@@ -116,10 +112,9 @@ body{
     font-size: 15px;
   }
   .dropzone {
-    box-shadow: 0px 2px 20px 0px #f2f2f2;
-    border: 1px dashed #c0ccda;
     padding: 60x;
-    border-radius: 10px;
+    background: radial-gradient(98.7% 98.7% at 50% 0%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.152177) 29.17%, rgba(0, 0, 0, 0.105208) 57.81%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 5px;
     background-color: #fbfdff;
     margin-left: 15px;
     margin-bottom: 15px;
@@ -140,4 +135,12 @@ body{
 }
 .main-div {
   margin: 50px;
+}
+.main-div form{
+  width: 50%;
+    font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.63);
 }
