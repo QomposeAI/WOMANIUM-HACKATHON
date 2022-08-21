@@ -4,7 +4,6 @@ import os
 from flask import Flask, render_template, request, redirect, jsonify
 
 app = Flask(__name__)
-app.debug = True
 
 @app.route("/")
 def index():
