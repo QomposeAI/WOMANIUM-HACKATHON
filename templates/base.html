@@ -18,9 +18,9 @@
             <header>
                 <div>Logo</div>
                 <div class="menubar">
-                    <div> <a href="{{ url_for('about') }}" class="link-dark">About</a> </div>
-                    <div> <a href="{{ url_for('contact') }}" class="link-dark">Contact</a> </div>
-                    <div> <a href="https://github.com/QomposeAI/hackathon.github.io" class="link-dark">Github</a> </div>
+                    <div> <a href="{{ url_for('about') }}" class="link-dark">about</a> </div>
+                    <div> <a href="{{ url_for('contact') }}" class="link-dark">contact</a> </div>
+                    <div> <a href="https://github.com/QomposeAI/hackathon.github.io" class="link-dark">github</a> </div>
                 </div>
              </header>
         </div>
@@ -28,10 +28,11 @@
             <!--This is where other pages add their data-->
             {% block content %}{% endblock %}
         </div>
-    </div>
     <div class="qompose">
-        Qompose.AI
+            Qompose.AI
     </div>
+    </div>
+
 </body>
 <script src="../static/main.js"></script>
 </html>
