@@ -10,3 +10,4 @@ MarkupSafe==1.1.1
 SQLAlchemy==1.3.17
 Werkzeug==0.16.0
 requests==2.9.1
+moviepy==1.0.3
