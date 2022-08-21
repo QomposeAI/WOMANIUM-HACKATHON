@@ -12,12 +12,12 @@ html{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px;
 }
 body{
-    width: 80%;
+    width: 70%;
     border-radius: 10px;
-  
+    height: 60%;
 }
 .menubar{
     display: flex;
@@ -78,10 +78,13 @@ body{
   }
   .qompose{
     position: fixed;
-    right: 0px; bottom: 0px;
+    right: 0px;
+    bottom: 0px;
     width: 200px;
     height:40px;
-    background-color:lightblue;
+    /* background-color:lightblue; */
     padding: 5px;
     color: whitesmoke;
+    font-weight: 900;
+    font-size: 15px;
   }
