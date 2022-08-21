@@ -8,6 +8,7 @@ html{
   justify-content: center;
   align-items: center;
   height: 100%;
+  font-family: 'Outfit', serif;
 }
 .logo{
   width: 121px;
@@ -130,8 +131,9 @@ body{
 .index-text h1{
   font-size: 25px;
   font-weight: 600;
+  font-family: 'Roboto', serif;
 }
-.index-text h2{
+.index-text p{
   font-weight: 400;
   font-size: 20px;
   padding-top: 50px;
