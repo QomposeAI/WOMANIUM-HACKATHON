@@ -1,21 +1,63 @@
 {% extends "base.html" %}
+{% block customscripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+
+<script type="text/javascript">
+  Dropzone.options.myDropzone = {
+
+
+  // Prevents Dropzone from uploading dropped files immediately
+    autoProcessQueue: false,
+    uploadMultiple: true,
+    parallelUploads: 10,
+    maxFiles: 10,
+    init: function() {
+      myDropzone = this; // closure
+
+      this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        myDropzone.processQueue();
+      });
+
+    }
+  };
+</script>
+{%endblock%}
 {% block title %}Home Page{% endblock%}
 {% block content %}
 
  <div class="d-flex justify-content-between p-4">
  <div>I have text written.</div>
-    <form action="/upload_video" method="POST" enctype="multipart/form-data">
+<!--    <form action="/upload_video" method="POST" enctype="multipart/form-data">
         <div class="form-group">
         <div class="drop-zone">
             <span class="drop-zone_prompt">Drop file here or click to upload</span>
         </div>
         <input type="file" name="file" id="uploaded_video" class="drop-zone__input">
+        <input type="submit" value="submit">
+        
+            <label>Select Video</label>
             <div class="custom-file">
                 <input type="file" name="video" id="video" class="custom-file-input">
+                <label for="video" class="custom-file-label">Select Video</label>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Upload Video</button>
+
+
     </form>
+            -->
+    <form action="/" class="dropzone" id="my-dropzone" method="POST">
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="form-group">
+          <label for="myFormData">Example Form Data</label>
+          <input type="text" name="myFormData" id="myFormData" placeholder="Enter your data" class="form-control" required/>
+        </div>
+      </form>
 </div>
 
 {% endblock%}
