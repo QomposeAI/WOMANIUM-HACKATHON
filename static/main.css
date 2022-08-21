@@ -18,6 +18,13 @@ body{
     width: 70%;
     border-radius: 10px;
     min-height: 60%;
+  background: rgba(6, 6, 6, 0.55);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+/* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 4px;
+  color: white;
 }
 .menubar{
     display: flex;
