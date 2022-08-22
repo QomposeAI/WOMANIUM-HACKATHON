@@ -1,5 +1,28 @@
 {% extends "base.html" %}
 {% block title %}Video Player{% endblock%}
 {% block content %}
-I will have embedded player in it.
+
+<div class="d-flex justify-content-between p-4 main-div">
+    <div class="video-text">
+        <h1>Our Algorithm detected 200 seconds of video containing 50 filler words.</h1>
+    </div>
+
+    <div class="container">
+        <div id="video-player"></div>
+    </div>
+</div>
+</div>
+
+
+<script src="https://muse.ai/static/js/embed-player.min.js"></script>
+<script>
+    const player = MusePlayer({
+        container: document.getElementById('video-player'),
+        video: 'c41FczZ',
+        autoplay: true,
+        loop: true,
+        volume: 0,
+        sizing: 'fit',
+    });
+</script>
 {%endblock%}
