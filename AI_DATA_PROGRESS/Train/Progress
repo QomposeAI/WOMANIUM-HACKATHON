@@ -1,0 +1,3 @@
+We initially tried our training code with 100 train,test and validation sets.
+While we were able to build out original multi_layered res-net blstm model we encountered dimention errors.
+Since we did not enough time we switched to a simple CNN model that was compatible with array sizes.
