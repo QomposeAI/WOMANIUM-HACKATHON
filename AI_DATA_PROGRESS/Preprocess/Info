@@ -1,0 +1,13 @@
+For the datasets we used SEP-28K clips with 1s duration.
+
+github: https://github.com/apple/ml-stuttering-events-dataset
+@misc{lea:2021,
+    author       = {Colin Lea AND Vikramjit Mitra AND Aparna Joshi AND Sachin Kajarekar AND Jeffrey P. Bigham},
+    title        = {{SEP-28k}: A Dataset for Stuttering Event Detection from Podcasts with People Who Stutter},
+    howpublished = {ICASSP 2021},
+}
+
+For our AI we decided to convert .wav files into septograms with sftf method in reference to FluentNet article.
+
+For the septograms we used n_fft = 400 and hop_length = 160 corresponding to 25ms to 10ms at 16kHz
+
