@@ -15,8 +15,11 @@ def about():
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("player.html")
 
+@app.route("/player")
+def player():
+    return render_template("player.html")
 
 
 headers = {
