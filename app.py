@@ -1,5 +1,7 @@
 import os
 import requests
+import workingpre
+import specNplot
 
 from flask import Flask, render_template, request, redirect, jsonify, abort
 from flask_dropzone import Dropzone
@@ -28,10 +30,6 @@ def player():
     return render_template("player.html")
 
 
-headers = {
-    'Content-Type': 'application/json',
-    'Key': 'FOgbsGOPiC0Pf2DcMsn9oZDG6301428b',
-}
 
 app.config['MAX_CONTENT_LENGTH'] = 5000 * 5000 * 100000
 app.config['DROPZONE_ALLOWED_FILE_CUSTOM'] = True
@@ -45,7 +43,7 @@ def too_large(e):
     return "File is too large", 413
 
 
-@app.route("/upload", methods=["GET", "POST"])
+@app.route("/upload", methods=["POST"])
 def upload():
     if request.method == "POST":
         if request.files:
@@ -58,19 +56,12 @@ def upload():
             if file_ext not in app.config['DROPZONE_ALLOWED_FILE_TYPE']:
                 return 'file not supported', 400
             video.save(os.path.join('static/uploads', video.filename))
-            video_ta=moviepy.editor.VideoFileClip('static/uploads/demo.mp4')
+            video_ta=moviepy.editor.VideoFileClip('static/uploads/'+ video.filename +"")
             audio=video_ta.audio
-            audio.write_audiofile('static/uploads/extracted_audio.mp3')
-            return redirect(request.url)
-    return render_template("index.html")
-    
-#calling extract the audio
-
-#function to extract audio and saving it 
-
-#7 mins 7*60 short parts
-
-#call the ai script 
-
+            audio.write_audiofile('static/uploads/audio/extracted_audio.wav')
+            return redirect('player.html')
+#            workingpre.call("static/uploads/audio")
+#            specNplot.callspec()
+    return render_template('player.html')
 
 
