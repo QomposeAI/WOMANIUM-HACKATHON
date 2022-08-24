@@ -1,0 +1,16 @@
+The PodcastFillers dataset consists of 199 full-length podcast episodes in English with manually annotated filler words and automatically generated transcripts. 
+The podcast audio recordings, sourced from SoundCloud, are CC-licensed, gender-balanced, and total 145 hours of audio from over 350 speakers. 
+The annotations are provided under a non-commercial license and consist of 85,803 manually annotated audio events including approximately 35,000 filler words (“uh” and “um”) and 50,000 non-filler events such as breaths, music, laughter, repeated words, and noise. 
+The annotated events are also provided as pre-processed 1-second audio clips. 
+The dataset also includes automatically generated speech transcripts from a speech-to-text system.  
+
+The audio files lengths are different and the files of each class are not separated. 
+The existence of noise, different accents, unequal length, variability of data, large number files and unbalanced classes made the dataset analysis and training any machine learning algorithm impossible. 
+
+Therefore, we begin with homogenization dataset i.e. transforming the audio file into equal vector dimension, separate classes and consider balanced classes. 
+The next step is to reduce the dimension of inputs such that they are computable in a PC. 
+This affects the accuracy significantly if a large reduction is done. 
+However, since the limitation of time and memory, we had to reduce dimension 1600 into 11 and applied QNN for classifying data. 
+
+The code ran successfully. From theoretical point of view, we showed that QNN can be used for classifying audio with acceptable accuracy if an appropriate number of qubits are considered.
+This project considers real marketing data and we believe that its subject is interesting for many companies. Our current foundations show that we are able to classify various audio data and provide commercial application if appropriate hardware and team supports are provided.    
