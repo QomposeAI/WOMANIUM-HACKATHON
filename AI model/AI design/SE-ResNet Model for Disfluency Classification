@@ -1,0 +1,32 @@
+SE-ResNet Model for Disfluency Classification
+
+The model is a supervised deep learning model that can detect and classify filler words and disfluency in audio data. 
+The audio data first goes through a preprocessing step to convert wav files to spectrogram image format, serving as the AI model input in a NumPy array format. 
+The model’s architecture consists of different layers of Neural networks forming a deep neural network connection. 
+The input is fed into Eight different Layers of SEResNet block each of which is classifying different disfluency. 
+Each of the SERestNet Model followed by a BLSTM layer and an Attention layer.
+
+The SEResNet Block is a Squeeze Excitation Residual CNN layer. 
+This Squeeze and Excitation layer is an attention mechanism that is most widely used for performance improvements. 
+The network basically introduces a novel channel-wise attention mechanism for CNNs (Convolutional Neural networks) to improve their channel interdependencies. 
+The network adds a parameter that re-weights each channel accordingly so that it becomes more sensitive towards significant features while ignoring the irrelevant features.
+
+Squeeze and Excitation Network basically scale each channel's information. 
+It reduces the non-relevant channel information and the relevant channel are not much affected. 
+So, after the whole operation, the feature map only contains the relevant information, which increases the representational power of the entire network.
+The Convolutional Neural Network (CNN) used the convolution operator to extract hierarchical information from the images.
+
+This block is followed by the Bidirectional LSTM block (BLSTM). LSTM stands for Long Short-Term Memory.
+
+LSTM is a Gated Recurrent Neural Network, and bidirectional LSTM is just an extension of that model. 
+The key feature is that those networks can store information that can be used for future cell processing. 
+We can think of LSTM as an RNN with some memory pool that has two key vectors:
+
+- (1) Short-term state: keeps the output at the current time step.
+- (2) Long-term state: stores, reads, and rejects items meant for the long-term while passing through the network.
+
+In bidirectional LSTM, instead of training a single model, we introduce two. The first model learns the sequence of the input provided, and the second model learns the reverse of that sequence. Both models are combined in a multiplication mechanism/mode. 
+
+The final output of the model is the attention layer. A mechanism that can help a neural network to memorize long sequences of information or data can be considered the attention mechanism.
+
+With the model trained on about 9000 input audio data in 30 epochs, an accuracy close to 95% is to be expected.
