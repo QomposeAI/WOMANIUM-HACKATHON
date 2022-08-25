@@ -1,7 +1,7 @@
 import os
 import requests
-import workingpre
-import specNplot
+#import workingpre
+#import specNplot
 
 from flask import Flask, render_template, request, redirect, jsonify, abort
 from flask_dropzone import Dropzone
